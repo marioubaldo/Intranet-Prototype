@@ -1,0 +1,16 @@
+{{!< default}}
+
+<div class="container">
+    {{#radar}}
+        <div class="term-radar">
+            <div class="author-image-placeholder u-placeholder">
+                <img class="radar-image lazyload u-object-fit"
+                    data-src="{{img_url profile_image size="xs"}}"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    alt="{{name}}">
+            </div>
+            <h1 class="radar-name">{{name}}</h1>
+        </div>
+    {{/radar}}
+    {{> list}}
+</div>

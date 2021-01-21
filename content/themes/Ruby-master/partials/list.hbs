@@ -1,0 +1,31 @@
+<div class="row">
+<div class="sidebar-column-left col-xl-3 col-lg-4">
+        {{> widgets/widgets-left}}
+    </div>
+    <div class="content-column col-xl-6 col-lg-4">
+        <div class="content-area">
+            <main class="site-main">
+             <div class="content-center">
+            {{> logo}}
+        </div>
+
+        <div class="footer-widgets">
+        {{> widgets/widgets-footer}}
+    </div>
+                <div class="post-feed">
+                    <div class="row">
+                        {{#foreach posts visibility="all"}}
+                            <div class="post-column col-xl-4 col-md-6">
+                                {{> "loop"}}
+                            </div>
+                        {{/foreach}}
+                    </div>
+                </div>
+                {{pagination}}
+            </main>
+        </div>
+    </div>
+    <div class="sidebar-column-right col-xl-3 col-lg-4">
+        {{> widgets/widgets-right}}
+    </div>
+</div>
